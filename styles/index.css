@@ -3,10 +3,14 @@ html, body, html * {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #9be7ff;
+}
+
 #header {
-    width: 100%;
+    max-width: 100%;
     height: calc(2vh);
-    background-color: #F1F6FF;
+    background-color: #2286c3;
     margin-top: 0;
     padding: 60px;
     display: flex;
