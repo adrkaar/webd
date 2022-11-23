@@ -8,10 +8,11 @@ body {
     margin: 0px; /* remove the margin around the body */
 }
 
+
 #header {
-    width: 100%;
+    max-width: 100%;
     height: calc(2vh);
-    background-color: #5fb3e7;
+    background-color: #233a49;
     height: 100px;
     display: flex;
     -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
@@ -33,41 +34,59 @@ body {
 }
 
 .nav-button {
-    letter-spacing:.2em;
+    letter-spacing:.1em;
     text-transform: uppercase;
     font-size: 1.5em;
     text-shadow:1px 0px rgba(black,.4);
     padding: 20px;
-    color: black;
+    color: white;
     text-decoration: none; /* Fjerner linje under */
     font-weight: 600;
 }
 
 .nav-button:hover{
-    color: #F1F6FF;
+    color: gray;
 }
 
 #container {
     display: flex;
-}
-
-.nav {
-    height: 60px;
-    width: 100%;
-    background-color: #F1F6FF;
-    margin: auto;
-    top: 0;
-}
-   
-
-
+}  
 
 
 /* Text */
 .large-text {
     font-size: 2.5em;
     font-weight: 600;
-    color: #000000;
+    color: white;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 940px) {
+    .large-text {
+        display: none;
+    }
+
+    #header {
+        height: 80px; 
+    }
+
+    #header-content {
+        display: flex;
+        justify-content: flex-start;
+     }
+
+    .nav-button {
+        letter-spacing:.05em;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        text-shadow:1px 0px rgba(black,.4);
+        padding: 10px;
+        color: white;
+        text-decoration: none; /* Fjerner linje under */
+        font-weight: 600;
+    }
+}
+
+@media (max-width:700px){
 }
