@@ -4,37 +4,47 @@ html, body, html * {
 }
 
 body {
-    background-color: #9be7ff;
+    background-color: #9be8ff70;
+    margin: 0px; /* remove the margin around the body */
 }
 
 #header {
-    max-width: 100%;
+    width: 100%;
     height: calc(2vh);
-    background-color: #2286c3;
-    margin-top: 0;
-    padding: 60px;
+    background-color: #5fb3e7;
+    height: 100px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+} 
+
+#header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-#header nav {
-    flex-direction: row;
-    
+#header-nav {
+    display: flex;
+    padding-left: 200px;
 }
 
 .nav-button {
     letter-spacing:.2em;
     text-transform: uppercase;
+    font-size: 1.5em;
     text-shadow:1px 0px rgba(black,.4);
     padding: 20px;
     color: black;
     text-decoration: none; /* Fjerner linje under */
+    font-weight: 600;
 }
 
-.nav-button :hover{
+.nav-button:hover{
     color: #F1F6FF;
-    background-color: #F1F6FF;
 }
 
 #container {
