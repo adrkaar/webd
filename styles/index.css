@@ -68,12 +68,11 @@ body {
     }
 
     #header {
-        height: 80px; 
+        height: 90px; 
     }
 
     #header-content {
         display: flex;
-        justify-content: flex-start;
      }
 
     .nav-button {
