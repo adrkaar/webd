@@ -1,7 +1,7 @@
 fetch("../components/dishes.html")
 .then(res => res.text())
 .then(text => {
-    let element = document.querySelector("script#navbar");
+    let element = document.querySelector("script#menu");
     let newelem = document.createElement("div");
     newelem.setAttribute("id", "menu");
     newelem.innerHTML = text;
