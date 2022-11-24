@@ -26,7 +26,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
 }
 
 #header-nav {
@@ -86,30 +92,58 @@ body {
 
 /* ------------------  MEDIA QUERIES ------------------ */
 
-@media (max-width: 940px) {
+
+@media (max-width: 1100px) {
     .large-text {
         display: none;
     }
+
+    .nav-button {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .nav-button {
+        font-size: 1.1em;
+    }
+}
+
+
+@media (max-width: 940px) {
 
     #header {
         height: 90px; 
     }
 
     #header-content {
-        display: flex;
+        justify-content: center;
      }
 
     .nav-button {
         letter-spacing:.05em;
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-shadow:1px 0px rgba(black,.4);
         padding: 10px;
         color: white;
         text-decoration: none; /* Fjerner linje under */
         font-weight: 600;
     }
+
+     #header-nav {
+        padding-left: 20px;
+     }
 }
 
 @media (max-width:700px){
+
+    #logo {
+        display: none;
+    }
+
+    #header-content {
+        justify-content: center;
+     }
 }
