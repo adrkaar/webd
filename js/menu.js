@@ -1,4 +1,4 @@
-fetch("../components/dishes.html")
+fetch("../components/menu.component.html")
 .then(res => res.text())
 .then(text => {
     let element = document.querySelector("script#menu");
