@@ -55,7 +55,9 @@ body {
 }
 
 .nav-button:hover{
-    color: gray;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
 }
 
 #logo {

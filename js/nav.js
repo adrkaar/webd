@@ -7,3 +7,19 @@ fetch("../components/nav.component.html")
     newelem.innerHTML = text;
     element.parentNode.replaceChild(newelem, element);
 })
+
+
+/* 
+ $(document).ready(function(){
+    // Logic her
+ });
+
+ $(window).scroll(function(){
+    // Logic here
+
+    let windowTop = $(window).scrollTop();
+
+    $(".slide").each(function(event){
+        if(windowTop >= $($this).attr('href')).offset().top - 100){
+    });
+ }); */0

@@ -1,21 +1,126 @@
 #home-container {
     display: flex;
     margin: auto;
-    padding-top: 100px;
 }
 
 
-.picturecontainer {
+.home-front-top {
     max-width: 90%;
-    height: calc(70vh);
+    width: 100%;
     display: flex;
     justify-content: center;
-    
+    margin: auto;
+    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Gratis å bruke - https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
 }
 
 .frontimg{
     max-width: 100%;
     height: auto;
+}
+
+
+#booking {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  border-color: #0f0809;
+  border-radius: 20px;
+}
+
+#booking-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #233a49;
+  border-top-left-radius: 20px;
+  border-right-color: black;
+  
+}
+
+#booking-information {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.booking-information {    
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border-color: #233a49;
+  margin: 100px;
+  width: 1000%;
+  padding: 50px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+}
+
+
+.booking-restaurant {    
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border-color: #233a49;
+  margin: 10px;
+  width: 40%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+#booking-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+
+
+#line {
+  color: black;
+  width: 20%;
+  margin: auto;
+}
+
+.booking-restaurant-header {
+  font-family: 'Quicksand', bold;
+  font-size: 30px;
+}
+
+.booking-restaurant-adress {
+  font-family: 'Quicksand', normal;
+  font-size: 15px;
+}
+
+.booking-restuarant-opening-weekday {
+  font-family: 'Quicksand', normal;
+  font-size: 15px;
+}
+
+.booking-restuarant-opening-weekend {
+  font-family: 'Quicksand', normal;
+  font-size: 15px;
+}
+
+.booking-restuarant-kitcheninfo {
+  font-family: 'Quicksand', oblique;
+  font-size: 15px;
+}
+
+.booking-restuarant-telephone {
+  font-family: 'Quicksand', oblique;
+  font-size: 15px;
+}
+
+.booking-restuarant-mail {
+  font-family: 'Quicksand', oblique;
+  font-size: 15px;
+}
+
+.booking-text {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Quicksand', bold;
 }
 
 /* 
