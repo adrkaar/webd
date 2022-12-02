@@ -5,11 +5,11 @@
 
 
 .home-front-top {
-    max-width: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
     margin: auto;
+    backdrop-filter: blur(2px);
     background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Gratis å bruke - https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
 }
 
@@ -47,13 +47,12 @@
   flex-direction: column;
   border-radius: 20px;
   border-color: #233a49;
-  margin: 100px;
-  width: 1000%;
   padding: 50px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
   -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
   box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  backdrop-filter: blur(2px);
 }
 
 
