@@ -9,6 +9,8 @@ fetch("../components/nav.component.html")
 })
 
 
+
+
 /* 
  $(document).ready(function(){
     // Logic her

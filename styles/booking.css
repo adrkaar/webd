@@ -45,9 +45,6 @@ input[type=text], select, textarea {
     backdrop-filter: blur(2px);
 }
 
-.home-container {
-}
-
 .frontimg{
     max-width: 100%;
     height: auto;
@@ -72,6 +69,7 @@ input[type=text], select, textarea {
     flex-direction: column;
     background-color: #233a49;
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-right-color: black;
     
 }

@@ -1,122 +1,77 @@
-#home-container {
+#home-container{
     display: flex;
+    flex-direction: row;
     margin: auto;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.home-left {
+  background-color: #233a49;
+  width: 60%;
+  border-top-left-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-.home-container {
-  background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Gratis å bruke - https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+.home-right {
+  background-color: #f2f2f2;
+  width: 40%;
+  border-bottom-right-radius: 20px;
+  background-image: url("../assets/img/home/brick-wall.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.home-textbox {
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  height: 80%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 
 .frontimg{
     max-width: 100%;
     height: auto;
 }
 
+@media (max-width: 1200px) {
+  #home-container{
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 100px);
+  }
 
-#booking {
-  display: flex;
-  margin: auto;
-  width: 80%;
-  border-color: #0f0809;
-  border-radius: 20px;
-}
+  .home-left {
+    background-color: #233a49;
+    width: 100%;
+    border-top-left-radius: 20px;
+    height: 50%;
+  }
 
-#booking-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #233a49;
-  border-top-left-radius: 20px;
-  border-right-color: black;
-  
-}
-
-#booking-information {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-
-.booking-information {    
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  border-color: #233a49;
-  padding: 50px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-  -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-  box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-  backdrop-filter: blur(2px);
-}
-
-
-.booking-restaurant {    
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  border-color: #233a49;
-  margin: 10px;
-  width: 40%;
-  padding: 10px;
-  background-color: #ffffff;
-}
-
-#booking-restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+  .home-right {
+    background-color: #f2f2f2;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    height: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 
 
-#line {
-  color: black;
-  width: 20%;
-  margin: auto;
-}
-
-.booking-restaurant-header {
-  font-family: 'Quicksand', bold;
-  font-size: 30px;
-}
-
-.booking-restaurant-adress {
-  font-family: 'Quicksand', normal;
-  font-size: 15px;
-}
-
-.booking-restuarant-opening-weekday {
-  font-family: 'Quicksand', normal;
-  font-size: 15px;
-}
-
-.booking-restuarant-opening-weekend {
-  font-family: 'Quicksand', normal;
-  font-size: 15px;
-}
-
-.booking-restuarant-kitcheninfo {
-  font-family: 'Quicksand', oblique;
-  font-size: 15px;
-}
-
-.booking-restuarant-telephone {
-  font-family: 'Quicksand', oblique;
-  font-size: 15px;
-}
-
-.booking-restuarant-mail {
-  font-family: 'Quicksand', oblique;
-  font-size: 15px;
-}
-
-.booking-text {
-  font-weight: bold;
-  font-size: 40px;
-  font-family: 'Quicksand', bold;
-}
 
 /* 
 
