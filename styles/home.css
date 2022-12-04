@@ -4,30 +4,52 @@
     margin: auto;
     width: 100%;
     height: calc(100vh - 200px);
+    justify-content: center;
 }
 
 .home-left {
   background-color: #233a49;
-  width: 60%;
+  width: 40%;
   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   display:flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+
 }
 
 
 .home-right {
-  background-color: #f2f2f2;
-  width: 40%;
+  width: 80%;
   border-bottom-right-radius: 20px;
-  background-image: url("../assets/img/home/brick-wall.jpg");
+  /* background-image: url("../assets/img/home/brick-wall.jpg"); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 20px;
 }
 
-.home-textbox {
+.home-textbox-left {
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  height: 80%;
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-textbox-right {
   background-color: white;
   justify-content: center;
   align-content: center;
@@ -39,8 +61,26 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 10px;
 }
 
+.main-image-container {
+  display: flex;
+  margin: auto;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.main-image{
+  width: 100%;
+  max-height: 100%;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
 .frontimg{
     max-width: 100%;
@@ -66,6 +106,12 @@
     width: 100%;
     border-bottom-right-radius: 20px;
     height: 50%;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .home-textbox-left { 
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }

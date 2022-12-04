@@ -32,7 +32,6 @@ input[type=text], select, textarea {
     border-color: black;
     padding: 20px;
     width: 50%;
-    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
@@ -53,6 +52,9 @@ input[type=text], select, textarea {
 .booking-main {
     display: flex;
     flex-direction: row;
+       -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 }
 
 /* Booking information */
@@ -69,7 +71,6 @@ input[type=text], select, textarea {
     flex-direction: column;
     background-color: #233a49;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     border-right-color: black;
     
 }
@@ -82,10 +83,11 @@ input[type=text], select, textarea {
 .booking-information {    
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-color: #233a49;
     margin: 100px;
-    width: 1000%;
+    width: 100%;
     padding: 50px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
@@ -112,7 +114,7 @@ input[type=text], select, textarea {
 #booking-restaurants {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     
 }
@@ -140,6 +142,7 @@ input[type=text], select, textarea {
 .booking-restaurant-adress {
     font-family: 'Quicksand', normal;
     font-size: 15px;
+    margin:0;
 }
 
 .booking-restuarant-opening-weekday {
@@ -155,16 +158,19 @@ input[type=text], select, textarea {
 .booking-restuarant-kitcheninfo {
     font-family: 'Quicksand', oblique;
     font-size: 15px;
+    margin:0;
 }
 
 .booking-restuarant-telephone {
     font-family: 'Quicksand', oblique;
     font-size: 15px;
+    margin: 0;
 }
 
 .booking-restuarant-mail {
     font-family: 'Quicksand', oblique;
     font-size: 15px;
+    margin:0;
 }
 
 .booking-header {
