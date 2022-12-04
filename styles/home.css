@@ -4,13 +4,9 @@
 }
 
 
-.home-front-top {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    backdrop-filter: blur(2px);
-    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Gratis å bruke - https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+.home-container {
+  background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Gratis å bruke - https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
 }
 
 .frontimg{

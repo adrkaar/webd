@@ -37,6 +37,22 @@ input[type=text], select, textarea {
   }
 
 
+.booking-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    backdrop-filter: blur(2px);
+}
+
+.home-container {
+}
+
+.frontimg{
+    max-width: 100%;
+    height: auto;
+}
+
 .booking-main {
     display: flex;
     flex-direction: row;
@@ -65,7 +81,6 @@ input[type=text], select, textarea {
     flex-wrap: wrap;
     padding: 10px;
 }
-
 .booking-information {    
     display: flex;
     flex-direction: column;
@@ -84,18 +99,31 @@ input[type=text], select, textarea {
 .booking-restaurant {    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 20px;
     border-color: #233a49;
     margin: 10px;
     width: 40%;
     padding: 10px;
     background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 }
 
 #booking-restaurants {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.booking-bottom {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 
@@ -108,7 +136,7 @@ input[type=text], select, textarea {
 
 .booking-restaurant-header {
     font-family: 'Quicksand', bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .booking-restaurant-adress {
@@ -141,9 +169,14 @@ input[type=text], select, textarea {
     font-size: 15px;
 }
 
-.booking-text {
+.booking-header {
     font-weight: bold;
     font-size: 40px;
+    font-family: 'Quicksand', bold;
+}
+
+.booking-text {
+    font-size: 20px;
     font-family: 'Quicksand', bold;
 }
 
@@ -160,9 +193,51 @@ input[type=text], select, textarea {
         display: flex;
         flex-direction: column;
     }
+
+    #booking-container {
+        display: flex;
+        background-color: #233a49;
+        border-top-left-radius: 20px;
+        border-right-color: black;
+        width: 100%;
+        
+    }
     .container-contact-form {
         width: 95%;
         border-top-right-radius: 0px;
         margin-bottom: 5em;
+    }
+    
+}
+
+@media (max-width: 750px) {
+
+    .container-contact-form {
+        width: 71%;
+        border-top-right-radius: 0px;
+        margin-bottom: 5em;
+    }
+
+    #booking-container {
+        display: flex;
+        background-color: #233a49;
+        border-top-left-radius: 20px;
+        border-right-color: black;
+        width: 80%;
+        
+    }
+
+    .booking-information {    
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        border-color: #233a49;
+        margin: 60px;
+        width: 100%;
+        padding: 50px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+        -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+        box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     }
 }
