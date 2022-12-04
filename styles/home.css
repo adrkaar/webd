@@ -1,22 +1,77 @@
-#home-container {
+#home-container{
     display: flex;
+    flex-direction: row;
     margin: auto;
-    padding-top: 100px;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.home-left {
+  background-color: #233a49;
+  width: 60%;
+  border-top-left-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.picturecontainer {
-    max-width: 90%;
-    height: calc(70vh);
-    display: flex;
-    justify-content: center;
-    
+.home-right {
+  background-color: #f2f2f2;
+  width: 40%;
+  border-bottom-right-radius: 20px;
+  background-image: url("../assets/img/home/brick-wall.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.home-textbox {
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  height: 80%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 
 .frontimg{
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 1200px) {
+  #home-container{
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 100px);
+  }
+
+  .home-left {
+    background-color: #233a49;
+    width: 100%;
+    border-top-left-radius: 20px;
+    height: 50%;
+  }
+
+  .home-right {
+    background-color: #f2f2f2;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
 
 /* 
 
